@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo I</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="icon" href="../imagenes/mariano.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Fondo gris oscuro */
+            color: #fff; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #333; /* Fondo gris oscuro para el encabezado */
+            border-bottom: 1px solid #555; /* Borde inferior opcional */
+        }
+        .header-top img {
+            max-height: 80px; /* Ajusta el tamaño del logo según tus necesidades */
+            margin-right: 10px;
+        }
+        .header-top .university-info {
+            display: flex;
+            align-items: center;
+        }
+        .header-top h2 {
+            margin: 0;
+            font-size: 18px; /* Tamaño de fuente para el nombre de la universidad */
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+            margin-top: 20px;
+            margin-bottom: 0px;
+            padding: 3px 20px;
+            background-color: #444; /* Fondo gris oscuro para la sección de contenido */
+            
+        }
+        .vista:hover{
+            color: rgb(255, 0, 0);
+        }
+        .contex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #444; /* Fondo gris oscuro para la sección de contenido */
+            border: 1px solid #666; /* Borde opcional */
+            box-shadow: 0px 0px 40px #444a;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px; /* Espacio entre el texto y la imagen */
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilo para el título que ocupa el 100% del área */
+        .titulo {
+            width: 100%;
+            text-align: center;
+            background: #333a;
+            background: url("https://i0.wp.com/iluminet.com/newpress/wp-content/uploads/2022/01/luzneon-02.jpg?fit=1024%2C576&ssl=1")
+            top / cover fixed #643;
+            color: #fff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+
+            
+        }
+
+        /* Contenedor principal para texto e imágenes */
+        .contenedor-principal {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos para los divs de texto e imagen dentro del contenedor principal */
+        .contenedor-principal .text, .contenedor-principal .image {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .contenedor-principal .text {
+            background-color: transparent;
+            color: #eee;
+            border-radius: 10px;
+            border: 1px solid #333;
+            box-shadow: 0px 0px 15px #333;
+        }
+
+        .contenedor-principal .image img {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0px 0px 15px #333);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="university-info">
+                <img src="../Imagenes/mariano.png" alt="Logo de Universidad Mariano Gálvez de Guatemala">
+                <h2>Universidad Mariano Gálvez de Guatemala</h2>
+            </div>
+            <h1>Rony Alexander Castillo López</h1>
+            <!-- Navegación con estilo 1 -->
+            <nav class="nav-style-1">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Introduccion/introduccion.html">Introducción</a></li>
+                    <li><a href="../ModuloI/modulo1.html">Módulo I</a></li>
+                    <li><a href="../ModuloII/modulo2.html">Módulo II</a></li>
+                    <li><a href="../ModuloIII/modulo3.html">Módulo III</a></li>
+                    <li><a href="../cierre/cierre.html">Pagina de Cierre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Div para el título -->
+    <!--Resuemn del modulo-->
+    <div class="titulo">
+        <h2  class="vista" style="padding: 0; margin: 0;">Modulo 1</h2>
+    </div>
+    
+    <main class="contenedor-principal">
+    <div class="contex">
+        <div class="content-section">
+            <div class="text">
+                <h2>Resumen de modulo</h2>
+                <p style="text-align: justify;">En este módulo, exploraremos el mundo de la lógica y sus aplicaciones en diversas áreas. Nos enfocaremos en la lógica de proposiciones, que se encarga del estudio de proposiciones y las relaciones entre ellas. Analizaremos los conectivos lógicos básicos como la conjunción (AND), disyunción (OR), negación (NOT), implicación (IF...THEN) y bicondicional (IF AND ONLY IF). Estos elementos son esenciales para la formación y análisis de argumentos válidos.
+                </p>
+                <p style="text-align: justify;">Además, destacaremos la importancia del trabajo en equipo en el proceso lógico. La colaboración es fundamental tanto en el ámbito académico como en el práctico, ya que permite el intercambio de ideas y la resolución conjunta de problemas complejos. A través de ejercicios y actividades grupales, aprenderemos a aplicar los principios lógicos de manera efectiva y a valorar el aporte de cada miembro del equipo.</p>
+            </div>
+            <div class="image">
+                <img src="../Imagenes/modulo I.png" alt="modulo 1">
+            </div>  
+        </div>
+    </div>
+    <!--Primera semana-->        
+    <div class="titulo ocho">
+        <h2 class="vista" style="padding: 0; margin: 0;">Semana1</h2>
+    </div>
+
+    <div class="contex">
+        <div class="content-section">
+            <div class="image">
+                <img src="..//Imagenes/semana1.jpeg" alt="semana 1" style="margin-right: 10px;">
+            </div>
+            <div class="text">
+                <h3 style="text-align: right;">Primera semana</h3>
+                <h4 style="text-align: right;">¿Que es la lógica?</h4>
+                <p style="text-align: justify;">La lógica es una ciencia que estudia la manera de distinguir los razonamientos válidos e inválidos, analiza y propone métodos para este fin así como también discute los principios en que se basan esos métodos.    
+                La lógica de sistemas es una parte de la informática que se enfoca en entender y trabajar con sistemas formales. Estos sistemas usan símbolos y reglas para expresar ideas y razonar sobre ellas. Se aplica en muchas áreas, como crear lenguajes de programación, asegurar que el software funcione correctamente y desarrollar inteligencia artificial 
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="image">
+                <img src="https://wpospeed.com/wp-content/uploads/2023/03/5155822_2676475-1024x1024.jpg.webp">
+            </div>
+            <div class="text">
+                <h3>Foro</h3>
+                <p>Durante la primera semana, el ingeniero Claudio nos asignó un pequeño foro en el que junto con mis compañeros de sección, nos dimos a la tarea de responder preguntas diseñadas para explorar y comprender mejor nuestra personalidad. Estas preguntas nos llevaron a reflexionar sobre nuestros intereses, valores y formas de pensar, lo que nos permitió conocernos mutuamente de manera más profunda 
+                </p>
+                <ul>
+                    <li>¿A qué se dedica?</li>
+                    <li>¿Qué es lo que más le gusta hacer en la vida?</li>
+                    <li>¿Si fuera un animal cuál sería y por qué?</li>
+                    <li>¿Qué aprendizajes le quedaron de la 1r. clase?</li>
+                    <li>¿Cómo podrían servir los conocimientos adquiridos en la vida cotidiana y profesional?</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content-section">
+            <div class="text">
+                <h3>Resumen de la semana</h3>
+                <p style="text-align: justify;">Una ciencia y un arte: ciencia porque es un conocimiento cierto de una realidad por las causas; y un arte porque conoce las leyes y las reglas lógicas por las cuales son o deben ser las distintas obras lógicas. 
+                    Un arte porque establece leyes de acuerdo con las cuales se deben construir estas obras internas de la razón: las definiciones, las clasificaciones, las enunciaciones o proposiciones y los razonamientos. 
+                    </p>
+            </div>
+            <div class="image">
+                <img src="../Imagenes/resumen1" alt="imagen 2">
+            </div>
+        </div>
+    </div>
+        <!--segunda semana-->
+        <div class="titulo">
+            <h2 class="vista" style="padding: 0; margin: 0;">Semana2</h2>
+        </div>
+        <div class="contex">
+            <div class="content-section">
+                <div class="image">
+                    <img src="https://facite.es/upload/0027-ayuda-calculadora-logica-proposicional.png" alt="semana 1" style="margin-right: 10px;">
+                </div>
+                <div class="text">
+                    <h3 style="text-align: right;">Segunda semana</h3>
+                    <h4 style="text-align: right;">Lógica de proporciones</h4>
+                    <p style="text-align: justify;">La lógica es una ciencia que se enfoca en el estudio de métodos y procedimientos para determinar la validez o invalidez de proposiciones. En esencia, se trata del estudio de la inferencia, que implica extraer conclusiones a partir de premisas dadas. Por ejemplo, en el razonamiento "Si Carlos quiere a Eloisa, entonces le escribirá una carta. No le escribió la carta; por tanto, Carlos no quiere a Eloisa", la lógica nos ayuda a reconocer la estructura del argumento y llegar a la conclusión de que Carlos no quiere a Eloisa. La lógica matemática es una rama de la lógica filosófica que se ocupa de aplicar estos principios en contextos más formales y precisos.</p>
+                </div>
+            </div>
+
+
+            <div class="content-section">
+                <div class="text">
+                    <p style="text-align: justify;">La lógica es una ciencia que se enfoca en el estudio de métodos y procedimientos para determinar la validez o invalidez de proposiciones. En esencia, se trata del estudio de la inferencia, que implica extraer conclusiones a partir de premisas dadas. Por ejemplo, en el razonamiento "Si Carlos quiere a Eloisa, entonces le escribirá una carta. No le escribió la carta; por tanto, Carlos no quiere a Eloisa", la lógica nos ayuda a reconocer la estructura del argumento y llegar a la conclusión de que Carlos no quiere a Eloisa. La lógica matemática es una rama de la lógica filosófica que se ocupa de aplicar estos principios en contextos más formales y precisos.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="https://miro.medium.com/v2/resize:fit:1234/1*_D96Q2_DROcdXqZqBwVGMw.png" alt="imagen 2">
+                </div>
+            </div>
+
+
+            <div class="content-section">
+                <div class="text" style="margin-bottom: 0px;">
+                    <h3 style="text-align: center;">Conectivos lógicos</h3>
+                    <p style="text-align: justify;">Las llamadas simples, también llamadas atómicas o elementales, se representan mediante una sola variable proposicional, como "p" o "q". Por ejemplo, la frase "El río Naranjo es llamado 'el río bolas'" se puede expresar como la variable proposicional "p", mientras que "La Tierra es un planeta del sistema solar" se puede representar también mediante una variable proposicional.
+                        Por otro lado, las llamadas compuestas, o moleculares, son aquellas que combinan dos o más roposiciones simples mediante conectivos lógicos. Por ejemplo, la frase "Las gallinas no tienen cuatro patas" se puede expresar mediante la negación de la variable proposicional "p". Asimismo, la afirmación "Juan es médico y psicólogo" se puede representar mediante la conjunción de las variables proposicionales "q" y "r". Estos son los dos tipos fundamentales de proposiciones que se manejan en lógica, permitiendo construir argumentos más complejos a partir de proposiciones simples.</p>
+                </div>
+            </div>
+
+
+            <div class="content-section">
+                <div class="image">
+                    <img src="https://st5.depositphotos.com/75383482/63251/v/450/depositphotos_632512264-stock-illustration-man-making-choice-money-time.jpg">
+                </div>
+                <div class="text" style="margin-bottom: 0px;">
+                    <h3 style="text-align: right;">Resumen de la semana 2</h3>
+                    <p style="text-align: justify;">Tuvimos una tarea en la cual debíamos tomar un rol en el grupo y analizar la analogía de los animales, exponiendo sobre la dinámica de la manada del grupo de animales que elegimos. En nuestro caso, seleccionamos una manada de delfines debido a su destacado trabajo en equipo. Durante la exposición, destacamos cómo los delfines colaboran entre sí para cazar, comunicarse y protegerse, resaltando la importancia del trabajo en equipo incluso en el reino anima</p>
+                </div>
+            </div>
+        </div>
+        <!--Semena 3-->
+        <div class="titulo" >
+            <h2 class="vista" style="padding: 0; margin: 0;">Semana 3</h2>
+        </div>
+        <div class="contex">
+            <div class="content-section">
+                <div class="text">
+                    <h2 style="text-align: center;">Lógica de proposiciones</h2>
+                    <p style="text-align: justify;">Para que una conjunción tenga sentido, las proposiciones deben poder separarse, conmutarse, y tener el mismo contexto. Ejemplos inválidos: "Juan y María son paisanos" (no se pueden separar), "Paco tomó arsénico y murió" (no se pueden conmutar).
+                    </p>
+                    <p style="text-align: justify;">Aprendí sobre proposiciones y cómo se combinan mediante conectivos lógicos como "y", "o", "pero", "si... entonces".
+                        Las proposiciones compuestas resultan de la combinación de dos o más proposiciones simples.
+                        La conjunción (p ∧ q) es verdadera solo si ambas proposiciones que la componen son verdaderas. Ejemplo: "El aula A1-205 está en el 2do piso y es iluminada".</p>
+                    <p style="text-align: justify;">La disyunción débil (p ∨ q), o "o" inclusiva, vincula dos proposiciones y es falsa solo si ambas proposiciones son falsas. Ejemplo: "La solución de (x–2)(y+2) = 0 es x = 2 o y = -2".
+                        La implicación ("si... entonces") conecta dos proposiciones de manera que la segunda depende de la primera. Ejemplo: "Si el aula A1-205 está iluminada, entonces se encuentra en el 2do piso".
+                        El conectivo "pero" vincula proposiciones que pueden parecer contradictorias. Ejemplo: "Fernando Belaunde fue un político pero honesto".</p>    
+                    <p style="text-align: justify;">En lenguaje coloquial, se usan sinónimos de "y" como además, mas, pero, no obstante, también, a la vez, aun cuando, sin embargo, aunque, a pesar de. Ejemplos: "Juan tiene diez años; también Elizabeth", "16 es múltiplo de 3, pero 5 es mayor que 3".
+                        La conjunción puede estar sobreentendida o tácita en algunos casos. Ejemplo: "Algunos han sido grandes, otros han conseguido la grandeza, a otros les ha sido impuesta".
+                        Una coma puede funcionar como una conjunción. Ejemplo: "En el anterior, coloque las comas en el lugar apropiado".
+                        </p>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="image">
+                    <img src="../Imagenes/semana3.jpeg" alt="imagen">
+                </div>
+                <div class="text">
+                    <h3 style="text-align: right;">exposiciones grabadas</h3>
+                    <p style="text-align: justify;">En la semana 3 tuvimos una tarea basada en los conectivos lógicos, la cual consistía en exponer lo aprendido en clase y proporcionar ejemplos para su comprensión. Durante la exposición, analizamos cómo estos conectivos influyen en la construcción de proposiciones y en la formación de argumentos válidos en lógica. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Semana 4-->
+        
+            <div class="titulo">
+                <h2 class="vista" style="margin: 0; padding: 0;">Semana 4</h2>
+            </div>
+
+            <div class="contex">
+            <div class="content-section">
+                <div class="text">
+                    <h2 style="text-align: center;">Conectivos lógicos:  Condicional, Bicondicional y Binegación</h1>
+                    <p style="text-align: justify;">En la semana  4  vimos cómo establecer relaciones de dependencia entre proposiciones mediante conectivos lógicos como "Si... entonces...", "y", "o", y "pero". Las proposiciones compuestas resultan de combinar proposiciones simples con estos conectivos. La conjunción (p ∧ q) es verdadera solo si ambas proposiciones son verdaderas, mientras que la disyunción débil (p ∨ q) es falsa solo si ambas proposiciones son falsas. Ejemplos de proposiciones con estos conectivos nos ayudan a comprender su aplicación y sentido.</p>
+                </div>
+                <div class="image">
+                    <img src="https://cdn.goconqr.com/uploads/checkbox_question/image/2834726/desktop_99911c21-aef2-47f7-9527-7ba830e9fca5.png" alt="semana 4">
+                </div>
+            </div>
+
+
+            <div class="content-section">
+                    <div class="image">
+                        <img src="https://encyclopaedia.herdereditorial.com/w/images/thumb/7/72/405.png/400px-405.png">
+                    </div>
+                    <div class="text">
+                        <p style="text-align: right;">También estudiamos la bicondicionalidad usando "si y solo si" (p ↔ q), que es verdadera cuando ambas proposiciones tienen el mismo valor de verdad. Este conectivo establece una relación de doble dependencia entre las proposiciones. Ejemplos como "Puedes titularte si y solo si cumples todos los requisitos" ilustran cómo se usa este conectivo en la práctica, indicando que una condición es necesaria y suficiente para la otra</p>
+                    </div>
+            </div>
+            
+            <div class="content-section">
+                <div class="text">
+                    <p style="text-align: justify;">Además, vimos cómo vincular proposiciones con "no... y no..." o "ni... ni...", para negar conjuntamente dos proposiciones. Ejemplos incluyen "No ingresé a la UMG y no ingresé a la USAC", que demuestran cómo se pueden estructurar proposiciones negativas compuestas. También discutimos conceptos lógicos más avanzados como las tautologías y contradicciones, que son siempre verdaderas o falsas respectivamente, independientemente de los valores de verdad de las proposiciones que las componen.
+                        Finalmente, hablamos sobre la contingencia, donde las proposiciones pueden ser verdaderas o falsas según los valores de las proposiciones que las integran. La formalización es el proceso de traducir proposiciones del lenguaje cotidiano al lenguaje formal o simbólico. Al expresar proposiciones usando variables (p, q) y conectivos lógicos, se puede clarificar y analizar mejor la lógica subyacente, como en "La temperatura está sobre los 17°C y llueve" (p ∧ q) o "Llueve cuando la temperatura está sobre los 17°C" (p → q).</p>
+                    <p style="text-align: justify;">El ingeniero Claudio nos brindó una herramienta para simplificar la creación de tablas de verdad, facilitándonos el análisis lógico y permitiéndonos concentrarnos en comprender las relaciones entre proposiciones. Esta herramienta automatizó el proceso, ahorrándonos tiempo y esfuerzo al generar tablas completas con todos los casos posibles. Gracias a esto, pudimos mejorar nuestra habilidad para trabajar con lógica proposicional y profundizar nuestra comprensión de los conceptos fundamentales en este campo.
+                    </p>
+                    </div>
+            </div>
+            </div>
+    <!--semana 5-->
+    <div class="titulo">
+        <h2 class="vista" style="padding: 0; margin: 0;">Semana 5</h2>
+    </div>
+    <div class="contex">
+        <div class="content-section">
+            <div class="text">
+                <h3 style="text-align: center;">Primera evaluación parcial</h3>
+                <p style="text-align: justify;">Se realizó la primera evaluación parcial del módulo, aplicando lo aprendido desde la semana 1 hasta la 4. Nos enfocamos en proposiciones, conectores lógicos (conjunción, disyunción, negación, implicación, bicondicional), ambigüedad (léxica y estructural) y tablas de verdad. Analizamos y combinamos proposiciones, detectamos y resolvimos ambigüedades, y construimos tablas de verdad para diversas proposiciones compuestas. La evaluación aplicó estos conceptos en distintos problemas.
+                </p>
+            </div>
+            <div class="image">
+                <img src="https://definicion.de/wp-content/uploads/2009/03/examen-1.jpg" alt="imagen de parcial">
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="text">
+                <h3>El resultado de mi primer parcial</h3>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi, eaque nisi quod nobis delectus nostrum in maiores numquam adipisci, placeat nesciunt similique voluptas. Modi velit numquam enim veritatis unde!</p>
+            </div>
+            <div class="image">
+                <img src="../Imagenes/calificacion1.jpeg">
+            </div>
+        </div>
+    </div>
+    <!--Reflexiones del modio 1-->
+    <div class="titulo">
+        <h2 class="vista" style="padding: 0; margin: 0;">Reflexiones del modulo I</h2>
+    </div>
+        <div class="content-section">
+            <div class="text">
+                <h3 style="text-align: center;">¿Qué he aprendido en el modulo I?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error maiores tenetur maxime unde velit aliquam natus nihil aperiam nisi sequi? Quibusdam praesentium animi obcaecati autem et eius, saepe alias nihil.</p>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="text">
+                <h4>Temas vistos</h4>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab beatae quisquam sit odio voluptate, repellat amet aperiam voluptatum exercitationem autem numquam totam nemo modi sint eaque ducimus distinctio eos?</p>
+            </div>
+            <div class="image">
+                <img src="https://anaperezpalma.com/wp-content/uploads/2020/04/5c92476810826-1024x588-1.jpeg">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

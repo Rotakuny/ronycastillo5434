@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333;
+}
+
+/* Estilo 1: Anima desde arriba */
+.nav-style-1 ul li {
+    display: inline;
+    margin: 0 10px;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: animateNav 1s forwards;
+}
+
+@keyframes animateNav {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo 2: Aparece con zoom */
+.nav-style-2 ul li {
+    display: inline-block;
+    transform: scale(0);
+    animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Estilo 3: Borde inferior */
+.nav-style-3 ul li {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.nav-style-3 ul li:hover {
+    border-bottom-color: #ffffff;
+}
